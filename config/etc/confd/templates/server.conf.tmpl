@@ -15,7 +15,7 @@ server {
     server_name localhost;
 
     more_set_headers "X-Frame-Options: DENY";
-    more_set_headers "Access-Control-Allow-Origin: https://{{ getenv "VHOST" }}";
+    more_set_headers "Access-Control-Allow-Origin: *";
 
     location / {
         proxy_pass http://127.0.0.1:5001;
