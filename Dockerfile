@@ -29,7 +29,7 @@ if [ -f /app/Aptfile ]; then \
       apt-get update \
    && apt-get install -y --no-install-recommends `cat /app/Aptfile` build-essential \
 ;fi \
- && npm install 2>&1 >/dev/null \
+ && npm install >/dev/null \
  && apt-get purge -y build-essential \
  && apt-get autoremove -y \
  && apt-get clean \
