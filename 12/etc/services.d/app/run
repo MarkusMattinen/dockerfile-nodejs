@@ -1,0 +1,5 @@
+#!/usr/bin/execlineb -P
+
+with-contenv
+cd /app
+/usr/bin/npm start

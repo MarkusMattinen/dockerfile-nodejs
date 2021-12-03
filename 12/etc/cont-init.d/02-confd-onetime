@@ -1,0 +1,4 @@
+#!/usr/bin/execlineb -P
+
+with-contenv
+confd -onetime -backend env -config-file /etc/confd/confd.toml
